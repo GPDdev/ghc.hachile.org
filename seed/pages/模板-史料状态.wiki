@@ -1,7 +1,0 @@
-<includeonly><div class="ghc-source"><span class="ghc-source-badge">{{{1|待考}}}</span><span class="ghc-source-note">{{{2|尚待补充可靠来源}}}</span></div></includeonly><noinclude>
-用于标明条目的证据状态：
-* <nowiki>{{史料状态|正史|有公开、可核验的来源}}</nowiki>
-* <nowiki>{{史料状态|轶事|由公开报道记录的校园故事}}</nowiki>
-* <nowiki>{{史料状态|待考|尚缺可靠来源}}</nowiki>
-</noinclude>
-

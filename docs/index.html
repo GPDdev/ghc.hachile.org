@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#4b1f61">
+  <meta name="description" content="国豪野史：记录同济大学国豪书院的正史、轶事与共同记忆。">
+  <meta property="og:title" content="国豪野史">
+  <meta property="og:description" content="记录国豪书院的正史、轶事与共同记忆。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ghc.hachile.org/">
+  <link rel="canonical" href="https://ghc.hachile.org/">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <title>国豪野史</title>
+</head>
+<body>
+  <a class="skip-link" href="#app">跳到正文</a>
+  <header class="site-header">
+    <a class="brand" href="#/" aria-label="国豪野史首页">
+      <span class="brand-mark" aria-hidden="true">国</span>
+      <span><strong>国豪野史</strong><small>GUOHAO CHRONICLES</small></span>
+    </a>
+    <nav aria-label="主导航">
+      <a href="#/">编年</a>
+      <a href="#/entry/guohao-college">书院</a>
+      <a href="#/entry/about">关于</a>
+      <button class="search-button" id="open-search" type="button" aria-label="搜索条目">
+        <span aria-hidden="true">⌕</span> 搜索 <kbd>Ctrl K</kbd>
+      </button>
+    </nav>
+  </header>
+
+  <main id="app" tabindex="-1">
+    <div class="loading">正在翻开院史……</div>
+  </main>
+
+  <footer class="site-footer">
+    <p>由爱好者共同维护，与同济大学及国豪书院官方无关。</p>
+    <p><a href="#/entry/rules">收录原则</a> · <a href="#/entry/disclaimer">免责声明</a> · CC BY-NC-SA 4.0</p>
+  </footer>
+
+  <dialog id="search-dialog" aria-labelledby="search-title">
+    <form method="dialog" class="search-head">
+      <label id="search-title" for="search-input">搜索国豪野史</label>
+      <button type="submit" aria-label="关闭搜索">×</button>
+    </form>
+    <input id="search-input" type="search" autocomplete="off" placeholder="输入人物、年份或事件……">
+    <div id="search-results" class="search-results" aria-live="polite"></div>
+  </dialog>
+
+  <noscript>本站需要 JavaScript 来显示条目，请在浏览器中启用 JavaScript。</noscript>
+  <script src="app.js" defer></script>
+</body>
+</html>
+

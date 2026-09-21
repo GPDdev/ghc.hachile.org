@@ -3,25 +3,20 @@ import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
-const manifest = await readFile(join(root, 'seed', 'manifest.txt'), 'utf8');
-const entries = manifest
-  .split(/\r?\n/)
-  .filter((line) => line && !line.startsWith('#'))
-  .map((line) => line.split('|'));
+const requiredFiles = ['index.html', 'styles.css', 'app.js', 'data.json', 'CNAME', '.nojekyll'];
+await Promise.all(requiredFiles.map((file) => access(join(root, 'docs', file))));
 
-const titles = new Set();
-const files = new Set();
-for (const [title, file, extra] of entries) {
-  if (!title || !file || extra !== undefined) throw new Error(`清单格式错误：${title ?? ''}`);
-  if (titles.has(title) || files.has(file)) throw new Error(`清单存在重复项：${title}`);
-  titles.add(title);
-  files.add(file);
-  await access(join(root, 'seed', 'pages', file));
+const data = JSON.parse(await readFile(join(root, 'docs', 'data.json'), 'utf8'));
+const slugs = new Set();
+for (const entry of data.entries) {
+  if (!entry.slug || !entry.title || !entry.summary || !entry.kind) throw new Error(`条目字段不完整：${entry.slug ?? '未知'}`);
+  if (slugs.has(entry.slug)) throw new Error(`条目 slug 重复：${entry.slug}`);
+  slugs.add(entry.slug);
+  for (const source of entry.sources) new URL(source.url);
 }
 
-if (!titles.has('首页') || !titles.has('MediaWiki:Common.css')) {
-  throw new Error('清单缺少首页或站点样式');
-}
+if (data.entries.filter((entry) => entry.year).length < 10) throw new Error('初始史料条目不足');
+if (data.featured.some((slug) => !slugs.has(slug))) throw new Error('首页推荐指向不存在的条目');
+if ((await readFile(join(root, 'docs', 'CNAME'), 'utf8')).trim() !== 'ghc.hachile.org') throw new Error('CNAME 配置错误');
 
-console.log(`检查通过：${entries.length} 个初始页面。`);
-
+console.log(`检查通过：${data.entries.length} 个页面，GitHub Pages 配置完整。`);
