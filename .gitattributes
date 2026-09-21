@@ -1,0 +1,5 @@
+*.sh text eol=lf
+*.php text eol=lf
+*.wiki text eol=lf
+*.yaml text eol=lf
+

@@ -1,0 +1,12 @@
+* navigation
+** mainpage|首页
+** 国豪书院|书院概览
+** 2022年|编年入口
+** randompage-url|随机条目
+** recentchanges-url|最近更改
+* 参与
+** 帮助:收录原则|收录原则
+** 国豪野史:关于|关于本站
+** 国豪野史:免责声明|免责声明
+** specialpages-url|特殊页面
+

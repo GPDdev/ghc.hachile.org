@@ -1,0 +1,47 @@
+name: Verify MediaWiki
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+
+      - name: Check seed content
+        run: node scripts/check.mjs
+
+      - name: Start MediaWiki
+        run: |
+          cp .env.example .env
+          docker compose up -d --build
+
+      - name: Wait for the home page
+        run: |
+          for attempt in $(seq 1 60); do
+            if curl --fail --silent 'http://127.0.0.1:8080/wiki/%E9%A6%96%E9%A1%B5' > /tmp/home.html; then
+              grep -q '国豪野史' /tmp/home.html
+              exit 0
+            fi
+            sleep 2
+          done
+          exit 1
+
+      - name: Show site statistics
+        run: docker compose exec -T wiki php maintenance/run.php showSiteStats
+
+      - name: Show logs on failure
+        if: failure()
+        run: docker compose logs
+
+      - name: Stop MediaWiki
+        if: always()
+        run: docker compose down -v
+

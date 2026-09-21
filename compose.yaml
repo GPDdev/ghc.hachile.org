@@ -1,0 +1,19 @@
+services:
+  wiki:
+    build: .
+    image: ghc-hachile-org:1.0
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:8080:80"
+    environment:
+      MW_SERVER: "${MW_SERVER:-http://localhost:8080}"
+      MEDIAWIKI_ADMIN_USER: "${MEDIAWIKI_ADMIN_USER:-GhcAdmin}"
+      MEDIAWIKI_ADMIN_PASSWORD: "${MEDIAWIKI_ADMIN_PASSWORD:?请复制 .env.example 为 .env 并修改管理员密码}"
+    volumes:
+      - wiki-data:/var/www/data
+      - wiki-images:/var/www/html/images
+
+volumes:
+  wiki-data:
+  wiki-images:
+
