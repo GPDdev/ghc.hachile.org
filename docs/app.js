@@ -69,7 +69,7 @@ function renderHome() {
   app.innerHTML = `
     <section class="hero">
       <div class="hero-copy">
-        <div class="eyebrow">同济大学 · 国豪书院 · 民间资料站</div>
+        <div class="eyebrow">同济大学国豪书院民间资料站</div>
         <h1>国豪<span>野史</span></h1>
         <p>独立于官方，兼收史实、人物与校园轶事。凡述必溯源，每条记录标注置信度。</p>
         <div class="hero-actions">
@@ -77,7 +77,6 @@ function renderHome() {
           <a class="button" href="#/wild">翻阅校园野史</a>
         </div>
       </div>
-      <img class="hero-mark" src="favicon.png" alt="国豪书院手写标识">
     </section>
 
     <section class="stats" aria-label="站点统计">
@@ -197,6 +196,7 @@ function renderEntry(slug) {
         </article>
         <aside class="article-aside">
           <div class="aside-box confidence-box"><span class="aside-label">史料置信度</span>${confidenceBadge(entry)}<p>${escapeHtml(entry.confidenceNote)}</p></div>
+          ${entry.provenance ? `<div class="aside-box"><span class="aside-label">材料来源</span><p>${escapeHtml(entry.provenance)}</p></div>` : ''}
           ${entry.categories.length ? `<div class="aside-box"><span class="aside-label">主题</span><p>${entry.categories.map(escapeHtml).join(' · ')}</p></div>` : ''}
           ${related.length ? `<div class="aside-box"><span class="aside-label">继续翻阅</span><ul>${related.map((item) => `<li><a href="${entryUrl(item)}">${escapeHtml(item.title)}</a></li>`).join('')}</ul></div>` : ''}
         </aside>
@@ -277,10 +277,11 @@ window.addEventListener('keydown', (event) => {
   }
 });
 
-Promise.all(['data.json', 'events.json'].map((url) => fetch(url).then((response) => {
+Promise.all(['data.json', 'events.json', 'group-history.json'].map((url) => fetch(url).then((response) => {
   if (!response.ok) throw new Error(`${url}: HTTP ${response.status}`);
   return response.json();
-}))).then(([data, events]) => {
+}))).then(([data, events, groupHistory]) => {
+  data.entries.push(...groupHistory.entries.map((entry) => ({ ...entry, provenance: groupHistory.provenance })));
   archive = data;
   eventArchive = events;
   route();
