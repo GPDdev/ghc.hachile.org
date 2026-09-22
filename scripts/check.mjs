@@ -16,7 +16,7 @@ for (const entry of data.entries) {
   slugs.add(entry.slug);
   for (const source of entry.sources) new URL(source.url);
 }
-if (groupHistory.entries.length !== 27) throw new Error(`群史条目数量错误：${groupHistory.entries.length}`);
+if (groupHistory.entries.length !== 26) throw new Error(`群史条目数量错误：${groupHistory.entries.length}`);
 for (const entry of groupHistory.entries) {
   if (!entry.slug || !entry.title || !entry.summary || entry.kind !== '校园野史' || !entry.confidence || !entry.confidenceNote) throw new Error(`群史条目字段不完整：${entry.slug ?? '未知'}`);
   if (slugs.has(entry.slug)) throw new Error(`条目 slug 重复：${entry.slug}`);
