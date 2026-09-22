@@ -3,30 +3,33 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#4b1f61">
-  <meta name="description" content="国豪野史：记录同济大学国豪书院的正史、轶事与共同记忆。">
+  <meta name="theme-color" content="#f4f0e8">
+  <meta name="description" content="国豪野史：独立记录同济大学国豪书院的正史、校园轶事与共同记忆。">
   <meta property="og:title" content="国豪野史">
-  <meta property="og:description" content="记录国豪书院的正史、轶事与共同记忆。">
+  <meta property="og:description" content="凡述必溯源，每条记录标注置信度。">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://ghc.hachile.org/">
   <link rel="canonical" href="https://ghc.hachile.org/">
-  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="favicon.png" type="image/png">
   <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.dataset.theme=localStorage.getItem('theme')||'auto'</script>
   <title>国豪野史</title>
 </head>
 <body>
   <a class="skip-link" href="#app">跳到正文</a>
   <header class="site-header">
     <a class="brand" href="#/" aria-label="国豪野史首页">
-      <span class="brand-mark" aria-hidden="true">国</span>
-      <span><strong>国豪野史</strong><small>GUOHAO CHRONICLES</small></span>
+      <img src="favicon.png" alt="" width="44" height="44">
+      <span><strong>国豪野史</strong><small>GUOHAO · WILD</small></span>
     </a>
     <nav aria-label="主导航">
-      <a href="#/">编年</a>
-      <a href="#/entry/guohao-college">书院</a>
+      <a href="#/">总目</a>
+      <a href="#/archive">事件库</a>
+      <a href="#/wild">野史</a>
       <a href="#/entry/about">关于</a>
+      <button class="icon-button" id="theme-toggle" type="button" aria-label="切换亮色或暗色模式" title="切换亮色或暗色模式">◐</button>
       <button class="search-button" id="open-search" type="button" aria-label="搜索条目">
-        <span aria-hidden="true">⌕</span> 搜索 <kbd>Ctrl K</kbd>
+        <span aria-hidden="true">⌕</span><span>搜索</span><kbd>Ctrl K</kbd>
       </button>
     </nav>
   </header>
@@ -36,16 +39,28 @@
   </main>
 
   <footer class="site-footer">
-    <p>由爱好者共同维护，与同济大学及国豪书院官方无关。</p>
-    <p><a href="#/entry/rules">收录原则</a> · <a href="#/entry/disclaimer">免责声明</a> · CC BY-NC-SA 4.0</p>
+    <div class="footer-institution">
+      <img class="institution-logo institution-logo-dark" src="institution-dark.png" alt="同济大学国豪书院、未来技术学院">
+      <img class="institution-logo institution-logo-light" src="institution-light.png" alt="同济大学国豪书院、未来技术学院">
+      <p>资料对象标识；本站与同济大学及国豪书院官方无隶属关系。</p>
+    </div>
+    <div class="operator">
+      <img src="operator.jpg" alt="同济大学未来技术班非官方标识" width="60" height="60">
+      <p><strong>同济大学未来技术班非官方</strong><br>运营与勘误：<a href="mailto:anontjer@outlook.com">anontjer@outlook.com</a></p>
+    </div>
+    <div class="footer-links">
+      <a href="#/entry/rules">收录原则</a>
+      <a href="#/entry/disclaimer">免责声明</a>
+      <span>CC BY-NC-SA 4.0</span>
+    </div>
   </footer>
 
   <dialog id="search-dialog" aria-labelledby="search-title">
     <form method="dialog" class="search-head">
-      <label id="search-title" for="search-input">搜索国豪野史</label>
+      <label id="search-title" for="search-input">检索国豪档案</label>
       <button type="submit" aria-label="关闭搜索">×</button>
     </form>
-    <input id="search-input" type="search" autocomplete="off" placeholder="输入人物、年份或事件……">
+    <input id="search-input" type="search" autocomplete="off" placeholder="输入人物、年份、地点或事件……">
     <div id="search-results" class="search-results" aria-live="polite"></div>
   </dialog>
 
@@ -53,4 +68,3 @@
   <script src="app.js" defer></script>
 </body>
 </html>
-

@@ -1,12 +1,15 @@
 {
-  "updated": "2026-09-21",
-  "featured": ["guohao-college", "guohao-school", "li-guohao-name"],
+  "updated": "2026-09-22",
+  "featured": ["guohao-college", "southwest-home", "graduation-sail", "future-tech-college"],
+  "timeline": ["guohao-school", "guohao-college", "southwest-home", "future-tech-college", "first-graduation"],
   "entries": [
     {
       "slug": "guohao-college",
       "title": "国豪书院",
       "year": 2022,
       "kind": "正史",
+      "confidence": "正史",
+      "confidenceNote": "校方介绍与同济大学新闻均可核验。",
       "label": "书院沿革",
       "summary": "成立于2022年的同济大学拔尖创新人才培养书院，名称取自老校长李国豪。",
       "categories": ["书院概览", "人才培养"],
@@ -24,15 +27,18 @@
     {
       "slug": "guohao-school",
       "title": "国豪学堂",
-      "year": 2021,
+      "year": 2020,
       "kind": "正史",
+      "confidence": "正史",
+      "confidenceNote": "国豪书院官网将成立时间明确记为2020年9月。",
       "label": "书院前身",
-      "summary": "国豪书院成立前，新生院开展拔尖人才培养时使用的培养单元名称之一。",
+      "summary": "2020年9月成立的书院制实体，2022年升级为国豪书院。",
       "categories": ["书院概览", "前身"],
       "sections": [
-        {"title": "沿革", "paragraphs": ["国豪学堂是国豪书院成立前，同济大学新生院开展拔尖人才培养时使用的培养单元名称之一。公开的2021—2022学年奖学金评定细则表明，当时已经存在“新生院国豪学堂”的组织和学生评奖体系。", "2022年国豪书院成立时，2020级和2021级国豪学堂共236名学生被计入书院成立初期的学生规模。因此，国豪学堂可视作书院历史中的直接前身之一，但两者并非在所有时期都能简单等同。"]}
+        {"title": "沿革", "paragraphs": ["国豪书院官网记载，2020年9月同济大学国豪学堂成立，是服务基础学科拔尖创新人才培养的书院制实体。公开的2021—2022学年奖学金评定细则也显示，当时存在“新生院国豪学堂”的组织和学生评奖体系。", "2022年，学校将国豪学堂升级为国豪书院。书院成立时，2020级和2021级国豪学堂共236名学生被计入初期学生规模。"]}
       ],
       "sources": [
+        {"title": "国豪书院", "publisher": "同济大学国豪书院", "url": "https://ghc.tongji.edu.cn/Chinese/sygl/ghsy.htm"},
         {"title": "2021—2022学年新生院国豪学堂本科生奖学金评定实施细则", "publisher": "同济大学新生院", "url": "https://xsy.tongji.edu.cn/_upload/article/files/bd/c8/bdacf2344bd588402b05431a9a23/6f5150f5-46b8-4daa-8bcf-435272733eaf.pdf"},
         {"title": "国豪书院", "publisher": "同济大学本科生院", "url": "https://jwc.tongji.edu.cn/ghsy/list.htm"}
       ]
@@ -42,6 +48,8 @@
       "title": "国豪精英班",
       "year": 2022,
       "kind": "正史",
+      "confidence": "正史",
+      "confidenceNote": "培养方案与书院官网可核验。",
       "label": "培养项目",
       "summary": "依托国豪书院运行的工科、医学拔尖人才培养项目。",
       "categories": ["人才培养"],
@@ -59,6 +67,8 @@
       "title": "“2+1+X”培养体系",
       "year": 2022,
       "kind": "正史",
+      "confidence": "正史",
+      "confidenceNote": "同济大学本科生院公开说明。",
       "label": "培养制度",
       "summary": "2年通专基础、1年专业核心，之后进入本研衔接的专业学习与学术创新。",
       "categories": ["人才培养"],
@@ -74,6 +84,8 @@
       "title": "李国豪与院名",
       "year": 2022,
       "kind": "正史",
+      "confidence": "正史",
+      "confidenceNote": "院名解释见书院官方介绍。",
       "label": "人物",
       "summary": "“国豪”二字从何而来，以及院名寄托的“国之英豪”之意。",
       "categories": ["人物", "院名"],
@@ -89,6 +101,8 @@
       "title": "2022年国豪书院启航仪式",
       "year": 2022,
       "kind": "正史",
+      "confidence": "有争议",
+      "confidenceNote": "事件本身有官方来源；“成立日”究竟指7月成立还是8月30日揭牌，常被混用。",
       "label": "事件",
       "summary": "8月30日，国豪书院揭牌，正式开启拔尖创新人才培养的新征程。",
       "categories": ["事件", "2022年"],
@@ -106,6 +120,8 @@
       "title": "首届迎新晚会",
       "year": 2022,
       "kind": "正史",
+      "confidence": "正史",
+      "confidenceNote": "书院官网活动记录可核验。",
       "label": "校园文化",
       "summary": "书院揭牌后的首届迎新晚会，在四平路校区一二九礼堂举行。",
       "categories": ["校园文化", "2022年"],
@@ -121,6 +137,8 @@
       "title": "四名高中同窗一同进入国豪书院",
       "year": 2023,
       "kind": "轶事",
+      "confidence": "较可信",
+      "confidenceNote": "来自校方相关公开报道，但属于人物故事而非制度档案。",
       "label": "人物故事",
       "summary": "四名高中同学通过国豪精英班和强基计划，在同一所书院重聚。",
       "categories": ["人物故事", "2023年"],
@@ -136,6 +154,8 @@
       "title": "西南一楼书院夜话",
       "year": 2024,
       "kind": "轶事",
+      "confidence": "正史",
+      "confidenceNote": "书院官网连续活动记录可核验。",
       "label": "校园文化",
       "summary": "在西南一楼进行的轻量师生谈话，让书院空间有了具体坐标。",
       "categories": ["校园文化", "地点", "2024年"],
@@ -151,6 +171,8 @@
       "title": "“国豪号”毕业帆船",
       "year": 2024,
       "kind": "轶事",
+      "confidence": "正史",
+      "confidenceNote": "书院毕业季公开报道可核验。",
       "label": "毕业记忆",
       "summary": "写有首届毕业生姓名的紫色风帆，把书院常用的“扬帆”意象变成了实物。",
       "categories": ["校园文化", "2024年"],
@@ -166,6 +188,8 @@
       "title": "首夺新生杯篮球冠军",
       "year": 2025,
       "kind": "正史",
+      "confidence": "正史",
+      "confidenceNote": "书院官网赛果记录可核验。",
       "label": "体育",
       "summary": "2025级国豪书院代表队首次问鼎同济大学“新生杯”篮球赛。",
       "categories": ["体育", "2025年"],
@@ -177,16 +201,159 @@
       ]
     },
     {
+      "slug": "southwest-home",
+      "title": "书院迁入西南一楼",
+      "year": 2023,
+      "kind": "空间史",
+      "confidence": "正史",
+      "confidenceNote": "书院官网明确记载2023年9月迁入。",
+      "label": "空间",
+      "summary": "2023年9月，国豪书院迁入西南一楼，书院生活从概念变成了具体空间。",
+      "categories": ["空间", "书院生活", "2023年"],
+      "sections": [
+        {"title": "一栋楼成为书院", "paragraphs": ["国豪书院官网在“书院夜话”报道中记载，书院于2023年9月正式迁入西南一楼。此后，驻楼导师工作站、活动室、草坪歌会和夜话等活动都围绕这里展开。", "官方介绍把西南一楼描述为集住宿学习、学生活动、书院办公和导师驻楼于一体的书院空间。它也因此成为国豪书院最具辨识度的地理坐标。"]}
+      ],
+      "sources": [
+        {"title": "书院夜话丨院长畅聊二三事", "publisher": "同济大学国豪书院，2023-12-01", "url": "https://ghc.tongji.edu.cn/Chinese/sy/sydt/2.htm"},
+        {"title": "国豪书院", "publisher": "同济大学国豪书院", "url": "https://ghc.tongji.edu.cn/Chinese/sygl/ghsy.htm"}
+      ]
+    },
+    {
+      "slug": "first-graduation",
+      "title": "首届毕业典礼",
+      "year": 2024,
+      "kind": "正史",
+      "confidence": "正史",
+      "confidenceNote": "书院官网报道与活动预告相互印证。",
+      "label": "毕业",
+      "summary": "2024年6月29日，国豪书院迎来首届毕业生并举行毕业典礼。",
+      "categories": ["毕业", "里程碑", "2024年"],
+      "sections": [
+        {"title": "第一届", "paragraphs": ["2024年6月29日下午，国豪书院2024届毕业典礼在四平路校区逸夫楼一楼报告厅举行。四名毕业生以《友谊地久天长》开场。", "首届毕业典礼把2020年国豪学堂成立以来的第一轮培养周期连成了完整时间线。"]}
+      ],
+      "sources": [
+        {"title": "同济大学国豪书院隆重举办2024届毕业典礼", "publisher": "同济大学国豪书院，2024-07-02", "url": "https://ghc.tongji.edu.cn/Chinese/sy/sydt/3.htm"},
+        {"title": "同济大学国豪书院2024届毕业典礼预告", "publisher": "同济大学国豪书院", "url": "https://ghc.tongji.edu.cn/Chinese/sy/hdyg/3.htm"}
+      ]
+    },
+    {
+      "slug": "future-tech-college",
+      "title": "未来技术学院成立",
+      "year": 2024,
+      "kind": "正史",
+      "confidence": "正史",
+      "confidenceNote": "未来技术学院发展历史页面明确记载。",
+      "label": "学院沿革",
+      "summary": "2024年5月，同济大学成立未来技术学院（未来技术班），依托国豪书院管理。",
+      "categories": ["未来技术", "人才培养", "2024年"],
+      "sections": [
+        {"title": "从论证到成立", "paragraphs": ["同济大学于2023年11月启动成立未来技术学院的系列论证。2024年5月，学校成立未来技术学院（未来技术班），并依托国豪书院管理。", "培养方案聚焦智慧空间、智能网联交通、工程互联网和机器人四个领域，以跨学科培养回应未来城市相关问题。"]}
+      ],
+      "sources": [
+        {"title": "未来技术学院发展历史", "publisher": "同济大学国豪书院（未来技术学院）", "url": "https://ghc.tongji.edu.cn/Chinese/sygl/wljsxy/fzls.htm"}
+      ]
+    },
+    {
+      "slug": "college-partnerships-2024",
+      "title": "两份书院合作备忘录",
+      "year": 2024,
+      "kind": "正史",
+      "confidence": "正史",
+      "confidenceNote": "双方签约均有书院官网记录。",
+      "label": "交流合作",
+      "summary": "国豪书院先后与澳门大学蔡继有书院、香港理工大学德艺书院签署合作备忘录。",
+      "categories": ["交流合作", "书院制", "2024年"],
+      "sections": [
+        {"title": "书院之间", "paragraphs": ["2024年4月12日，国豪书院与澳门大学蔡继有书院签署教育合作备忘录；同年7月1日，又与香港理工大学德艺书院签署《教育合作备忘录》。", "这两次签约把国豪书院的书院制交流从校内培养延伸到境外高校书院之间。"]}
+      ],
+      "sources": [
+        {"title": "国豪书院与澳门大学蔡继有书院签署教育合作备忘录", "publisher": "同济大学国豪书院，2024-04", "url": "https://ghc.tongji.edu.cn/Chinese/sy/sydt/2.htm"},
+        {"title": "国豪书院与香港理工大学德艺书院签署《教育合作备忘录》", "publisher": "同济大学国豪书院，2024-07", "url": "https://ghc.tongji.edu.cn/Chinese/sy/sydt/3.htm"}
+      ]
+    },
+    {
+      "slug": "guoxiaohao",
+      "title": "“国小豪”拍了拍你",
+      "year": 2025,
+      "kind": "校园野史",
+      "confidence": "正史",
+      "confidenceNote": "“国小豪”称呼出现在书院官网活动标题中。",
+      "label": "称呼",
+      "summary": "书院宣传语里出现的拟人化称呼“国小豪”，给机构名称添了一点校园口吻。",
+      "categories": ["校园语言", "校园野史", "2025年"],
+      "sections": [
+        {"title": "一个轻巧的自称", "paragraphs": ["“国小豪”并非正式机构名称，而是书院活动宣传中出现的拟人化称呼。2025年保研经验分享预告使用了“国小豪拍了拍你，并送上了一份保研秘籍”的标题。", "它能否发展成稳定的校园称呼仍待观察；目前可以确认的是，书院官方传播曾公开使用这一叫法。"]}
+      ],
+      "sources": [
+        {"title": "研途助力丨国小豪拍了拍你，并送上了一份保研秘籍", "publisher": "同济大学国豪书院，2025-10", "url": "https://ghc.tongji.edu.cn/Chinese/sy/hdyg/18.htm"}
+      ]
+    },
+    {
+      "slug": "guohao-vanguard",
+      "title": "国豪先锋队与“加油站”",
+      "year": 2024,
+      "kind": "校园野史",
+      "confidence": "正史",
+      "confidenceNote": "相关活动在书院官网有连续记录。",
+      "label": "朋辈文化",
+      "summary": "朋辈导师人才库取名“国豪先锋队”，讨论班和答疑室则被包装成“加油站”。",
+      "categories": ["朋辈互助", "校园语言", "2024年"],
+      "sections": [
+        {"title": "把补课说得像组队", "paragraphs": ["国豪书院将朋辈导师人才库称为“国豪先锋队”，由学生开展课程框架讲座、讨论班和经验分享。同期活动中还出现“国豪加油站”“国豪专属答疑室”等名称。", "这些称呼并不改变活动的学业辅导性质，却构成了书院生活中容易被记住的一套内部语言。"]}
+      ],
+      "sources": [
+        {"title": "学业沙龙", "publisher": "同济大学国豪书院", "url": "https://ghc.tongji.edu.cn/Chinese/xsfz/txtd/xysl/9.htm"},
+        {"title": "活动预告丨国豪先锋队与国豪加油站", "publisher": "同济大学国豪书院", "url": "https://ghc.tongji.edu.cn/Chinese/sy/hdyg/8.htm"}
+      ]
+    },
+    {
+      "slug": "one-room-tongji",
+      "title": "“一屋济室”的谐音梗",
+      "year": 2025,
+      "kind": "校园野史",
+      "confidence": "正史",
+      "confidenceNote": "活动名称和内容见书院社区文化页面。",
+      "label": "宿舍文化",
+      "summary": "宿舍大扫除与文明寝室评比，被命名为“一屋济室·‘寓’见美好”。",
+      "categories": ["宿舍", "校园语言", "2025年"],
+      "sections": [
+        {"title": "从大扫除到标题学", "paragraphs": ["2025年，国豪书院开展宿舍大扫除和优秀宿舍评比，活动使用了“一屋济室·‘寓’见美好”的名称。", "这是典型的校园活动命名：用同济、寝室与相遇的谐音，把一次日常劳动包装成具有辨识度的共同记忆。"]}
+      ],
+      "sources": [
+        {"title": "多彩一站式｜文明寝室哪家强？“一屋济室”评选结果揭晓", "publisher": "同济大学国豪书院，2025-06", "url": "https://ghc.tongji.edu.cn/Chinese/xsfz/sqwh/8.htm"}
+      ]
+    },
+    {
+      "slug": "warm-winter-concert",
+      "title": "嘉定校区暖冬音乐会",
+      "year": 2024,
+      "kind": "校园野史",
+      "confidence": "正史",
+      "confidenceNote": "书院官网活动回顾可核验。",
+      "label": "跨校区生活",
+      "summary": "来自三个校区的六十余名同学在嘉定校区相聚，把跨校区办学变成一次音乐会。",
+      "categories": ["音乐", "跨校区", "2024年"],
+      "sections": [
+        {"title": "三个校区的一晚", "paragraphs": ["2024年12月8日晚，国豪书院暖冬音乐会在嘉定校区复楼学术文化多功能厅举行。书院官网称，来自三个校区的六十余名同学参与。", "对跨专业、跨校区运行的书院而言，这场规模不大的音乐会留下了一个具体切面：分散在不同校区的学生，仍在尝试形成共同的书院生活。"]}
+      ],
+      "sources": [
+        {"title": "2024年国豪书院暖冬音乐会（嘉定）", "publisher": "同济大学国豪书院，2024-12", "url": "https://ghc.tongji.edu.cn/Chinese/xsfz/txtd/wthd/16.htm"}
+      ]
+    },
+    {
       "slug": "about",
       "title": "关于国豪野史",
       "year": null,
       "kind": "说明",
+      "confidence": "说明",
+      "confidenceNote": "本站说明。",
       "label": "关于本站",
       "summary": "一部由爱好者维护的国豪书院网络志书。",
       "categories": ["站务"],
       "sections": [
-        {"title": "我们记录什么", "paragraphs": ["国豪野史是一部由爱好者维护的国豪书院网络志书，记录制度沿革，也保存公开报道里的校园生活片段。本站参考维基式协作和清华野史的编年入口，但内容、编辑规则和维护团队均独立。", "本站与同济大学及国豪书院官方无关。原创内容采用 CC BY-NC-SA 4.0 许可；引用材料仍归原权利人所有。"]},
-        {"title": "三种状态", "paragraphs": ["正史：校方文件、官网新闻、公开出版物能够核验的事实。轶事：有公开记录、具有校园记忆价值的小故事。待考：线索有价值但证据不足，只能写明“不确定”，不能把推测写成事实。"]}
+        {"title": "我们记录什么", "paragraphs": ["国豪野史是一部由爱好者维护的国豪书院网络志书，记录制度沿革，也保存公开报道里的校园生活片段。本站参考中大野史的“主题卷宗、检索入口、逐条溯源”思路，但内容、编辑规则和维护团队均独立。", "本站与同济大学及国豪书院官方无关。原创内容采用 CC BY-NC-SA 4.0 许可；引用材料仍归原权利人所有。"]},
+        {"title": "置信度标记", "paragraphs": ["正史：校方文件、官网新闻或公开出版物能够核验。较可信：有公开报道或当事人公开陈述，但细节仍可能不完整。有争议：核心事件有来源，解释或时间口径存在分歧。待考：只有线索，本站不会把它写成确定事实。"]},
+        {"title": "运营与联系", "paragraphs": ["本站由微信公众号“同济大学未来技术班非官方”运营。意见、勘误与史料线索请联系 anontjer@outlook.com。投稿请勿包含私人联系方式、住址、课表、行程或未经同意的照片。"]}
       ],
       "sources": []
     },
@@ -195,11 +362,13 @@
       "title": "收录原则",
       "year": null,
       "kind": "说明",
+      "confidence": "说明",
+      "confidenceNote": "本站编辑规则。",
       "label": "编辑帮助",
       "summary": "先核验，再记录；保存共同记忆，同时尊重个人边界。",
       "categories": ["站务"],
       "sections": [
-        {"title": "最小写法", "paragraphs": ["写条目前先问三个问题：这件事与国豪书院有关吗？它值得多年以后再读吗？读者能否从来源中核验核心事实？", "条目应交代时间、地点、人物或组织；只写来源支持的事实，把推测明确标成推测；在文末列出可访问的来源。"]},
+        {"title": "最小写法", "paragraphs": ["写条目前先问三个问题：这件事与国豪书院有关吗？它值得多年以后再读吗？读者能否从来源中核验核心事实？", "条目应交代时间、地点、人物或组织；只写来源支持的事实，把推测明确标成推测；在文末列出可访问的来源，并标注置信度。"]},
         {"title": "不收录", "paragraphs": ["不收录纯粹的人身攻击、猎奇羞辱或无法核验的指控；不公开私人联系方式、住址、课表、行程等个人信息；不凭聊天截图或匿名投稿认定某人存在不当行为。", "学校文件、官网新闻、公开出版物和当事人的公开陈述应优先使用。自媒体、论坛或聊天记录可以提供线索，但不能独立支撑严重指控。"]}
       ],
       "sources": []
@@ -209,6 +378,8 @@
       "title": "免责声明",
       "year": null,
       "kind": "说明",
+      "confidence": "说明",
+      "confidenceNote": "本站声明。",
       "label": "站务",
       "summary": "本站是非官方资料整理项目，不是校方政策与事务办理依据。",
       "categories": ["站务"],
@@ -220,4 +391,3 @@
     }
   ]
 }
-
